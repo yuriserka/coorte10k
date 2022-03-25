@@ -1,0 +1,121 @@
+<div class="flex flex-col lg:max-w-md">
+  <div class="flex flex-col space-y-5">
+    <div class="bg-white p-4 rounded-lg text-justify">
+      {{ "textos_tela_dash.p1" | translate }}
+    </div>
+    <form class="flex flex-col space-y-5" [formGroup]="form">
+      <section>
+        <label class="block text-sm font-medium text-gray-700">
+          {{ "textos_tela_dash.filtros.categoria_var.label" | translate }}
+        </label>
+        <select class="rounded-lg w-full" formControlName="category">
+          <option [value]="null" selected hidden>
+            {{ "textos_tela_dash.filtros.categoria_var.value" | translate }}
+          </option>
+          <option *ngFor="let cat of variableCategories" [value]="cat">
+            {{ cat }}
+          </option>
+        </select>
+      </section>
+
+      <section>
+        <label class="block text-sm font-medium text-gray-700">
+          {{ "textos_tela_dash.filtros.var.label" | translate }}
+        </label>
+        <select class="rounded-lg w-full" formControlName="variable">
+          <option [value]="null" selected hidden>
+            {{ "textos_tela_dash.filtros.var.label" | translate }}
+          </option>
+          <option
+            *ngFor="let variable of filteredVariables"
+            [ngValue]="variable"
+          >
+            {{ variable.nome }}
+          </option>
+        </select>
+      </section>
+
+      <app-var-summary *ngIf="controlPanel.variable"></app-var-summary>
+
+      <section>
+        <label class="block text-sm font-medium text-gray-700">
+          Selecione as categorias de idade
+        </label>
+        <div class="flex flex-col justify-evenly bg-white p-3 rounded-lg">
+          <label
+            *ngFor="let filter of ageCategories; let i = index"
+            class="flex flex-row items-center space-x-3"
+          >
+            <input
+              type="checkbox"
+              [value]="filter"
+              [checked]="filter.checked"
+              (change)="onCheckboxChange(filter, 'ages')"
+            />
+            <p class="text-slate-900 font-semibold">
+              {{
+                i18nService.currentLang === "pt"
+                  ? filter.label
+                  : filter.label_en + " year" + (i ? "s" : "")
+              }}
+            </p>
+          </label>
+        </div>
+      </section>
+
+      <section>
+        <label class="block text-sm font-medium text-gray-700">
+          Selecione os gêneros
+        </label>
+        <div class="flex flex-col justify-evenly bg-white p-3 rounded-lg">
+          <label
+            *ngFor="let filter of genderCategories"
+            class="flex flex-row items-center space-x-3"
+          >
+            <input
+              type="checkbox"
+              [value]="filter"
+              [checked]="filter.checked"
+              (change)="onCheckboxChange(filter, 'genders')"
+            />
+            <p class="text-slate-900 font-semibold">
+              {{
+                i18nService.currentLang === "pt"
+                  ? filter.label
+                  : filter.label_en
+              }}
+            </p>
+          </label>
+        </div>
+      </section>
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700">
+          {{ "textos_tela_dash.filtros.loc.label" | translate }}
+        </label>
+        <section class="space-y-2">
+          <select class="rounded-lg w-full" (change)="updateUfs('uf', $event)">
+            <option [value]="null" selected hidden>
+              {{ "textos_tela_dash.filtros.loc.uf" | translate }}
+            </option>
+            <option *ngFor="let uf of ufs" [value]="uf.sigla">
+              {{ uf.nome }}
+            </option>
+          </select>
+
+          <select
+            class="rounded-lg w-full"
+            (change)="updateUfs('region', $event)"
+          >
+            <option [value]="null" selected hidden>
+              {{ "textos_tela_dash.filtros.loc.regiao" | translate }}
+            </option>
+            <option *ngFor="let reg of regions" [value]="reg.sigla">
+              {{ reg.nome }}
+            </option>
+          </select>
+        </section>
+      </div>
+    </form>
+  </div>
+</div>

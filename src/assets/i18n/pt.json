@@ -1,0 +1,27 @@
+{
+  "inicio": "inicio",
+  "painel": "painel",
+  "opinião": "opinião",
+  "textos_tela_inicial": {
+    "p1": "A Coorte de 100 Milhões de Brasileiros é uma base de dados longitudinal que contém aspectos sociodemográficos de mais de 100 milhões de pessoas e viabiliza o estudo de determinantes sociais e dos efeitos de políticas e programas sobre os diferentes aspectos da saúde brasileira. para sua construção, é feita a viculação de dados dos programas sociais (Cadastro Único) a outras bases de dados de sistemas de informação em saúde.",
+    "p2": "Utilize este aplicativo para explorar e entender as características socioeconômicas, demográficas e dados de nascimento e óbitos dessa população."
+  },
+  "textos_tela_dash": {
+    "p1": "Selecione uma variável do baseline da Coorte de 100M para o Brasil, por estado ou região. Filtre-a por ano de entrada na Coorte, gênero e faixa etária. Mostre os resultados em proporção ou contagem e ignore categorias inválidas.",
+    "filtros": {
+      "categoria_var": {
+        "label": "Selecione a categoria da variável",
+        "value": "Selecione uma categoria"
+      },
+      "var": {
+        "label": "Selecione a variável desejada",
+        "value": "Selecione uma variável"
+      },
+      "loc": {
+        "label": "Selecione um estado ou região para filtrar",
+        "uf": "Filtre por estados",
+        "regiao": "Filtre por regiões"
+      }
+    }
+  }
+}

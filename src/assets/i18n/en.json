@@ -1,0 +1,27 @@
+{
+  "inicio": "home",
+  "painel": "dashboard",
+  "opinião": "opinion",
+  "textos_tela_inicial": {
+    "p1": "The Cohort of 100 Million Brazilians is a longitudinal database that contains sociodemographic aspects of more than 100 million people and enables the study of social determinants and the effects of policies and programs on different aspects of Brazilian health. for its construction, data from social programs (Cadastro Único) is linked to other databases of health information systems.",
+    "p2": "Use this app to explore and understand the socioeconomic, demographic, birth and death data of this population."
+  },
+  "textos_tela_dash": {
+    "p1": "Select a 100M Cohort baseline variable for Brazil by state or region. Filter it by year of entry into the Cohort, gender and age group. Show results in proportion or count and ignore invalid categories.",
+    "filtros": {
+      "categoria_var": {
+        "label": "Select variable category",
+        "value": "Select a category"
+      },
+      "var": {
+        "label": "Select the desired variable",
+        "value": "Select a variable"
+      },
+      "loc": {
+        "label": "Select a state or region to filter",
+        "uf": "Filter by states",
+        "regiao": "Filter by regions"
+      }
+    }
+  }
+}

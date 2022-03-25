@@ -1,0 +1,36 @@
+<header class="flex flex-row h-16 bg-[#a31916] pr-4 space-x-5">
+  <div
+    class="hidden md:flex items-center justify-center bg-[#f2e5d7] px-2 sm:px-8"
+  >
+    <a routerLink="/">
+      <img src="../../../assets/images/logo-simples.png" />
+    </a>
+  </div>
+  <div class="justify-center items-center hidden lg:flex">
+    <img src="../../../assets/images/img-nome.png" draggable="false" />
+  </div>
+  <div class="flex items-center justify-around md:justify-end flex-1 space-x-3">
+    <a
+      *ngFor="let link of menuOptions"
+      [routerLink]="link.href"
+      class="flex flex-col items-center justify-center p-3 md:hover:underline text-white"
+    >
+      <fa-icon [icon]="link.icon"></fa-icon>
+      <span class="hidden md:flex capitalize">
+        {{ link.label | translate }}
+      </span>
+    </a>
+  </div>
+  <div class="flex flex-row space-x-3 p-3">
+    <img
+      class="hover:cursor-pointer"
+      src="../../../assets/images/brazil-icon.png"
+      (click)="updateLanguage('pt')"
+    />
+    <img
+      class="hover:cursor-pointer"
+      src="../../../assets/images/usa-icon.png"
+      (click)="updateLanguage('en')"
+    />
+  </div>
+</header>

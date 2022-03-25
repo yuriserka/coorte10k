@@ -1,0 +1,54 @@
+<div class="flex flex-col tracking-wide h-full md:h-[calc(100vh_-_64px)]">
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 gap-3 items-center flex-1 justify-center px-4 md:px-10 py-5"
+  >
+    <div class="flex flex-col text-justify space-y-5 text-xl">
+      <iframe
+        height="400"
+        class="aspect-video"
+        src="https://www.youtube.com/embed/ojpQFO9EIZM"
+        title="intro-coorte-app"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <p>
+        {{ "textos_tela_inicial.p1" | translate }}
+      </p>
+      <p>
+        {{ "textos_tela_inicial.p2" | translate }}
+      </p>
+    </div>
+    <div class="flex flex-col space-y-20 items-center justify-center">
+      <img src="../../../assets/images/logo-texto.png" draggable="false" />
+      <div class="flex flex-col space-y-8 items-center">
+        <img
+          class="w-full"
+          src="../../../assets/images/r1.png"
+          draggable="false"
+        />
+        <img
+          class="w-full"
+          src="../../../assets/images/r2.png"
+          draggable="false"
+        />
+        <div class="flex flex-row items-center justify-between w-full">
+          <button
+            class="flex flex-col items-center justify-evenly bg-[#a31916] hover:bg-[#851614] rounded-full py-3 px-5"
+            (click)="download()"
+          >
+            <p class="text-white text-center">Baixe o Dicionário de Dados:</p>
+            <fa-icon class="text-white" [icon]="downloadIcon"></fa-icon>
+          </button>
+          <button
+            class="flex flex-col items-center justify-evenly bg-[#a31916] hover:bg-[#851614] rounded-full py-3 px-5"
+            (click)="download()"
+          >
+            <p class="text-white text-center">Baixe a Documentação:</p>
+            <fa-icon class="text-white" [icon]="downloadIcon"></fa-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

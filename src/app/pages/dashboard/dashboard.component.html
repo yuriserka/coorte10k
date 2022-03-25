@@ -1,0 +1,38 @@
+<div
+  class="flex flex-col tracking-wide p-5 space-y-6 md:px-10 lg:flex-row lg:space-x-6 lg:space-y-0"
+>
+  <app-control-panel></app-control-panel>
+
+  <div
+    *ngIf="controlPanel.variable; else novar"
+    class="flex-1 flex flex-col items-center justify-center"
+  >
+    <div *ngIf="controlPanel.loading; else loaded">
+      <div
+        class="animate-spin border-b-4 border-r-4 border-[#a31916] h-24 w-24 rounded-full"
+      ></div>
+    </div>
+  </div>
+
+  <ng-template #loaded>
+    <div class="flex flex-row items-center justify-center flex-1 ">
+      <div class="flex flex-col justify-between">
+        <div
+          class="flex flex-col items-center space-y-3 lg:flex-row lg:space-x-3 lg:justify-around"
+        >
+          <app-bar-plot></app-bar-plot>
+          <app-map-plot></app-map-plot>
+        </div>
+        <div class="flex flex-row flex-1">
+          <app-time-plot></app-time-plot>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template #novar>
+    <div class="flex flex-row items-center justify-center flex-1">
+      <p class="underline">Please Select a variable</p>
+    </div>
+  </ng-template>
+</div>

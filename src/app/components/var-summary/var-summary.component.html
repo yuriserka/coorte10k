@@ -1,0 +1,43 @@
+<label class="block text-sm font-medium text-gray-700">
+  Informações da variável
+</label>
+<div class="bg-white p-3 rounded-md flex flex-col">
+  <div class="flex flex-col lg:flex-row space-x-3">
+    <p class="font-bold">Nome da Variavel:</p>
+    <p class="">
+      {{
+        i18nService.currentLang === "pt"
+          ? selectedVariable.nome
+          : selectedVariable.nome_en
+      }}
+    </p>
+  </div>
+  <div class="flex flex-col lg:flex-row space-x-3">
+    <p class="font-bold">Descrição:</p>
+    <p>
+      {{
+        i18nService.currentLang === "pt"
+          ? selectedVariable.descricao
+          : selectedVariable.descricao_en
+      }}
+    </p>
+  </div>
+  <div class="flex flex-col lg:flex-row space-x-3">
+    <p class="font-bold">Fonte dos Dados:</p>
+    <p>
+      {{ selectedVariable.origem }}
+    </p>
+  </div>
+  <div class="flex flex-col lg:flex-row space-x-3">
+    <p class="font-bold">Disponibilidade:</p>
+    <p>
+      {{ selectedVariable.presenca }}
+    </p>
+  </div>
+  <div class="flex flex-col lg:flex-row space-x-3">
+    <p class="font-bold">Dados Válidos:</p>
+    <p>
+      {{ formatValidDataInfo() }}
+    </p>
+  </div>
+</div>

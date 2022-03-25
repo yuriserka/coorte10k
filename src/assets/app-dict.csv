@@ -1,0 +1,1339 @@
+variavel,nome,descricao,categorias,tipo,presenca,origem,disponibilidade,classe,CONFERENCIA,organizacao
+acidtrab_sim,Acidente de Trabalho,Indica se a morte foi acidente de trabalho,"0 - Nulo 
+1 - Sim 
+2 - Não 
+88 - Ignorado 
+99 - Inconsistência",Byte,A partir de 2013,SIM,0,Causa Externa,NA,Óbito
+ano_backup,Ano de Backup da Base,Ano correspondente ao backup da base extraída,NA,NA,Todos os anos,criada,0,NA,NA,Criada
+apgar1_cut,Apgar no 1º Minuto,Apgar no 1º minuto (categorizada),"0 - Nulo
+1 - Asfixia grave
+2 - Asfixia moderada
+3 - Asfixia leve
+4 - Sem asfixia
+99 - Inconsistência",Integer,NA,SINASC,1,Identificação,SIM. Categoria e presença,Nascimento
+apgar1_sinasc,Apgar no 1º Minuto,Apgar no 1º minuto,NA,String,NA,SINASC,0,NA,NA,Nascimento
+apgar5_cut,Apgar no 5º Minuto,Apgar no 5º minuto (categorizada),"0 - Nulo
+1 - Asfixia grave
+2 - Asfixia moderada
+3 - Asfixia leve
+4 - Sem asfixia
+99 - Inconsistência",Integer,NA,SINASC,1,Identificação,SIM. Categoria e presença,Nascimento
+apgar5_sinasc,Apgar no 5º Minuto,Apgar no 5º minuto,NA,String,NA,SINASC,0,NA,NA,Nascimento
+aposentadoria_cut_val,Renda de Aposentadoria,Valor da renda de aposentadoria (categorizada),"0 - Sem renda
+1 - Menos que 1/4 salário mínimo
+2- 1/4 a 1/2 salário mínimo
+3 - 1/2 a 1 salário mínimo
+4 - 1 a 2 salários mínimos
+5 - 2 a 3 salários mínimos
+6 - Mais que 3 salários mínimos
+99 - Inconsistência",Integer,Todos os anos,Baseline,1,Pessoa,SIM. Categoria,Sociodemográfica
+assistmed_sim,Assistência Médica,Assistência Médica,"0 - Nulo 
+1 - Sim 
+2 - Não 
+88 - Ignorado 
+99 - Inconsistência",Byte,Todos os anos,SIM,1,Condições e Causas,NA,Óbito
+birth_weight_bi,Peso ao Nascer (Dicotômica),Peso ao nascer (dicotômica),"0 - Nulo
+1 - Menos que 2500g
+2 - 2500g ou mais
+99 - Inconsistência",NA,2001-2015,SINASC,0,Identificação,SIM. Categoria,Nascimento
+birth_weight_who,Peso ao Nascer (OMS),Peso ao nascer (OMS),"0 - Nulo
+1 - Menos que 1000g
+2 - Entre 1000g e 1499g
+3 - Entre 1500g e 2499g
+4 - Entre 2500g e 2999g
+5 - Entre 3000g e 3999g 
+6 - 4000g ou mais
+99 - Inconsistência",NA,2001-2015,SINASC,0,Identificação,SIM. Categoria,Nascimento
+causabas_o_sim,Causa Básica (a partir de 2013),Causa básica da DO,NA,NA,A partir de 2013,SIM,0,NA,NA,Óbito
+causabas_r_sim,Causa Básica Resselecionada,Causa básica resselecionada,NA,String,A partir de 2013,SIM,0,NA,NA,Óbito
+causabas_sim,Causa Básica (Todos os anos),Causa básica da DO,NA,String,Todos os anos,SIM,0,NA,NA,Óbito
+causamat_sim,Causa Externa Associada a Materna,Causa externa associada a uma causa materna,NA,Integer,A partir de 2013,SIM,0,NA,NA,Óbito
+cb_pre_sim,Causa Básica Antes da Resselação,Causa básica informada antes da resseleção,NA,String,A partir de 2013,SIM,0,NA,NA,Óbito
+cd_beneficio_peti,Tipo de Benefício do PETI,Tipo de benefício do Programa de Erradicação do Trabalho Infantil (PETI),"0 - Nulo e Vazio 
+1 - Rural
+2 - Urbano
+99 - Inconsistência",Byte,2001-2010,Baseline,0,NA,NA,Sociodemográfica
+cd_censo_inep,Código da Escola (INEP),Código da escola no Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (INEP),NA,String,2001-2010,Baseline,0,NA,NA,Sociodemográfica
+cd_crianca_quem_fica,Quem Fica com a Criança,Responsável por ficar com a criança entre 0 e 6 anos,"0 - Nulo
+1 - Pai / Mãe
+2 - Irmão / Irmã 
+3 - Avô / Avó
+4 - Sozinho
+5 - Creche
+6 - Outro
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+cd_eas_ms,Código EAS (MS),"Código EAS / MS, conforme codificação do Ministério da Saúde.",NA,String,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+cd_estado_civil,Estado Civil,Indica o estado civil da pessoa,"0 - Nulo
+1 - Solteiro ( a ) 
+2 - Casado ( a )
+3 - Divorciado ( a ) 
+4 - Separado ( a ) 
+5 - Viúvo ( a )
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+cd_ocupacao,Ocupação,CB0 - Código Brasileiro de Ocupação.,NA,String,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+cd_ocupacao_exercida_peti,Código da Ocupação (PETI),Código de ocupação exercida PETI,NA,Integer,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+CD_TIPO_COBERTURA,Programa de Assistência à Saúde,Programa de assistência à saúde que atende o domicílio,"0 - Nulo e Não informado
+1 - PACS - Programa de Agentes Comunitários de Saúde
+2 - PSF - Programa de Saúde da Família
+3 - Similares ao PSF 
+4 - Outro
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+cd_tipo_domicilio,Tipo de Domicílio,Tipo de domicílio,"0 - Nulo e Não informado
+1 - Casa
+2 - Apartamento
+3 - Cômodos
+4 - Outro
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+cd_tipo_ocupacao_peti,Tipo de Ocupação (PETI),Código do tipo de ocupação PETI,NA,Integer,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+cd_tratamento_agua,Tratamento da Água,"Tipo de tratamento realizado, com maior frequência, na água consumida no domicílio","0 - Nulo e Não informado
+1 - Filtração
+2 - Fervura
+3 - Cloração
+4 - Sem tratamento 
+5 - Outro
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+circobito_sim,Circunstância do Óbito,Indicar provável circunstância da morte não natural,"0 - Nulo 
+1 - Acidente 
+2 - Suicídio 
+3 - Homicídio 
+4 - Outros 
+88 - Ignorado 
+99 - Inconsistência",Byte,Todos os anos,SIM,1,NA,NA,Óbito
+cod_abaste_agua_domic_fam_eq,Abastecimento de Água,Tipo de abastecimento de água que atende o domicílio,"0 - Nulo ou não informado 
+1 - Rede Pública
+2 - Poço / Nascente 
+3 - Outro
+99 - Inconsistências",Byte,Todos os anos,Baseline,1,Domicílio,NA,Sociodemográfica
+cod_afastado_trab_memb,Pessoa Afastada na Semana Passada,Pessoa afastada na semana passada,"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+cod_agricultura_trab_memb,NA,É atividade extrativista,"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,CONFERIR,Sociodemográfica
+cod_agua_canalizada_fam,Água Encanada,Se o domicílio tem água encanada,"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+cod_ano_serie_frequenta_memb_eq,Ano/Série Escolar em Curso,Ano e série que a pessoa frequenta,"0 - Nulo
+1 - Primeiro(a)
+2 - Segundo(a)
+3 - Terceiro(a)
+4 - Quarto(a)
+5 - Quinto(a)
+6 - Sexto(a)
+7 - Sétimo(a)
+8 - Oitavo(a)
+9 - Nono(a)
+10 - Curso não-seriado 
+99 - Inconsistência
+88 - Não se aplica",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+cod_ano_serie_frequentou_memb_eq,Último Ano Escolar,Último ano frequentado pela pessoa,"0 - Nulo
+1 - Primeiro(a)
+2 - Segundo(a)
+3 - Terceiro(a)
+4 - Quarto(a)
+5 - Quinto(a)
+6 - Sexto(a)
+7 - Sétimo(a)
+8 - Oitavo(a)
+9 - Nono(a)
+10 - Curso não-seriado 
+99 - Inconsistência
+88 - Não se aplica",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+cod_banheiro_domic_fam,Existência de Banheiro,Existência de banheiro no domicílio,"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+cod_calcamento_domic_fam,Calçamento,Calçamento. Variável referente ao domicílio.,"0 - Nulo
+1 - Total
+2 - Parcial
+3 - Não existe
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+cod_censo_inep_memb,Código da Escola Frequentada (INEP),Código INEP da escola da pessoa,NA,Integer,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+cod_comunidade_quilombola_fam,Código da Comunidade Quilombola,Código da comunidade quilombola,"Campo de 4 posições no formato
+NNNN",Integer,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+cod_concluiu_frequentou_memb_eq,Conclusão do Curso,A pessoa concluiu o curso,"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência",Byte,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+cod_condicao_cadastro_fam,Condição do Cadastro da Família,Código de condição do cadastro da fam,"0 - Nulo
+1 - Atualizado
+2 - Desatualizado
+99 - Inconsistência",Byte,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+cod_contato_parente_memb,Contato com Parente,Tem contato com parente que não mora nas ruas,"0 - Nulo
+1 - Todo dia
+2 - Toda semana 
+3 - Todo mês
+4 - Todo ano
+5 - Quase nunca 
+6 - Nunca
+99 - Inconsistência",Byte,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+cod_deficiencia_memb_eq,Deficiência,Pessoa com deficiência,"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência",Byte,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+cod_destino_lixo_domic_fam_eq,Destino do Lixo,Destino dado ao lixo do domicílio,"0 - Nulo ou não informado 
+1 - Coletado
+2 - Queimado / Enterrado 
+3 - Céu aberto
+4 - Outro
+99 - Inconsistências",Byte,Todos os anos,Baseline,1,Domicílio,NA,Sociodemográfica
+cod_errad_trab_escravo_fam,Resgate de Trabalho Escravo,Indica se algum membro da família foi resgatado de trabalho análogo ao de escravo por órgão do governo,"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+cod_escoa_sanitario_domic_fam_eq,Escoamento Sanitário,Tipo de tratamento que é dado ao esgoto do domicílio,"0 - Nulo ou não informado 
+1 - Rede coletora
+2 - Fossa séptica
+3 - Fossa rudimentar 
+4 - Vala
+5 - Outro
+99  Inconsistências",Byte,Todos os anos,Baseline,1,Domicílio,NA,Sociodemográfica
+cod_especie_domic_fam_eq,Espécie do Domicílio,Espécie do domicílio,"0 - Nulo ou não informado 
+1 - Particular Permanente 
+2 - Particular improvisado 
+3 - Coletivo
+4 - Outro
+99 - Inconsistências",Byte,Todos os anos,Baseline,1,Domicílio,NA,Sociodemográfica
+cod_est_cadastral_fam,Estado Cadastral da Família,Estado cadastral da família,"0 - Nulo
+1 - Em cadastramento 
+2 - Sem Registro Civil 
+3 - Cadastro
+4 - Excluído
+99 - Inconsistência",Byte,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+cod_est_cadastral_memb,Estado Cadastral da Pessoa,Estado cadastral da pessoa,"Estado cadastral da pessoa:
+0 - Nulo
+1 - Em Cadastramento 
+2 - Sem Registro Civil 
+3 - Cadastrado
+4 - Excluído
+5 - Aguardando NIS 
+6 - Validando NIS 
+99 - Inconsistência",Byte,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+cod_familia_indigena_fam,Família Indígena,Indica se é família indígena,"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+cod_familiar_eq,Código Familiar Harmonizado,Código familiar harmonizado,NA,NA,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+cod_forma_coleta_fam,Forma de Coleta,Forma de coleta,"0 - Nulo
+1 - Informação migrada como inexistente
+2 - Sem visita Domiciliar 
+3 - Com visita domiciliar 
+99 - Inconsistência",Byte,NA,Baseline,0,NA,CONFERIR,Sociodemográfica
+cod_ibge_munic_escola_memb,Código do Município da Escola,Código do IBGE do Município da escola da pessoa,NA,Integer,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+cod_ibge_munic_nasc_pessoa_eq,Código do Município de Nascimento,Código IBGE para o município de nascimento da pessoa. (sem o dígito verificador),NA,Integer,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+cod_iluminacao_domic_fam_eq,Iluminação,Forma de iluminação utilizada no domicílio,"0 - Nulo ou não informado 
+1 - Medidor próprio
+2 - Medidor comunitário 
+3 - Sem medidor
+4 -Lampião
+5 - Vela
+6- Outro
+99 - Inconsistências",Byte,Todos os anos,Baseline,1,Domicílio,NA,Sociodemográfica
+cod_indigena_reside_fam,Residência em Reserva Indígena,Reside em reserva indígena,"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência",Byte,NA,Baseline,0,NA,NA,Sociodemográfica
+cod_local_domic_fam_eq,Tipo de Localidade,Tipo de localidade,"0 - Nulo ou Não informado
+1 - Urbana
+2 - Rural
+99 - Inconsistência",Byte,Todos os anos,Baseline,1,Domicílio,NA,Sociodemográfica
+cod_local_nascimento_pessoa_eq,Local de Nascimento,Local de nascimento,"0 - Nulo
+1 - Neste município
+2 - Em outro município 
+3 - Em outro país
+4 - Neste país
+99 - Inconsistências",Byte,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+cod_material_domic_fam_eq,Material de Construção do Domicílio,Material predominante na construção do domicílio,"0 - Nulo ou não informado 
+1 - Tijolo / Alvenaria
+2 - Taipa revestida
+3 - Taipa não revestida 
+4 - Madeira
+5 - Outro
+99 - Inconsistências",Byte,Todos os anos,Baseline,1,Domicílio,NA,Sociodemográfica
+cod_material_piso_fam,Material do Piso do Domicílio,Material predominante no piso do domicílio,"0 - Nulo
+1 - Terra
+2 - Cimento
+3 - Madeira aproveitada 
+4 - Madeira aparelhada
+5 - Cerâmica lajota ou pedra 
+6 - Carpete
+7 - Outro Material 
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+cod_munic_ibge_2_fam,Código do Município  Primeira Parte,Primeira parte do código IBGE do município,NA,Integer,NA,Baseline,0,NA,NA,Sociodemográfica
+cod_munic_ibge_fam_eq,Código do Município Harmonizado,"Código de munícipio conforme IBGE
+harmonizado",NA,Integer,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+cod_origem_familia_pessoa,Código Familiar de Origem,"Código familiar de origem, anterior à transferência",NA,Long,NA,Baseline,0,NA,NA,Sociodemográfica
+cod_pais_origem_pessoa_eq,Código do País de Origem,Código do país de origem,NA,Integer,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+cod_parentesco_rf_pessoa_eq,Parentesco com o Responsável Familiar,Parentesco da pessoa em relação ao responsável familiar,"0 - Nulo ou não informado 1 - Responsável
+2 - Esposo (a) 3 - Filho (a)
+4 - Enteado (a)
+5 - Neto (a) / Bisneto (a) 6 - Sogro(a)
+7 - Irmão/Irma
+8 - Genro/nora
+9 - Outro parente 10 - Não parente
+99 - Inconsistências",Byte,Todos os anos,Baseline,1,NA,NA,Sociodemográfica
+cod_principal_trab_memb_eq,Principal Trabalho,Principal trabalho da pessoa,"0 - Nulo
+1 - Trabalhador por conta própria (bico, autônomo)
+2 - Empregado sem carteira de trabalho assinada
+3 - Empregado com carteira de trabalho assinada
+4 - Trabalhador não remunerado 
+5 - Militar ou servidor público
+6 - Empregador
+7 - Estagiário
+8 - Aprendiz
+9 - Aposentado/Pensionista 
+10 - Trabalhador rural
+11 - Não trabalha 
+12 - Outra
+99  Inconsistências",Byte,Todos os anos,Baseline,1,NA,NA,Sociodemográfica
+cod_prog_prohab_memb,Participação em Programa do Ministério das Cidades,Faz parte de algum programa do Ministério de Cidades,"0 - Nulo
+1 - Habitação de Interesse Social - HIS-FNHIS
+2 - Urbanização, Regularização e Integração de Assentamentos Precários - UAP-FNHIS
+3 - Habitar Brasil BID - HBB 
+4 - Pró-Moradia
+5 - Minha Casa Minha Vida - Municípios até 50 mil habitantes 
+6 - Operações coletivas - FGTS 
+7 - Minha Casa Minha Vida - FAR 
+8 - Pró-Municípios
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+cod_prog_prohab_memb_comp,NA,NA,"0 - Nulo
+1 - Habitação de Interesse Social - HIS-FNHIS
+2 - Urbanização, Regularização e Integração de Assentamentos Precários - UAP-FNHIS
+3 - Habitar Brasil BID - HBB 4 - Pró-Moradia
+5 - Minha Casa Minha Vida - Municípios até 50 mil habitantes 
+6 - Operações coletivas - FGTS 
+7 - Minha Casa Minha Vida - FAR 
+8 - Pró-Municípios
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+cod_raca_cor_pessoa_eq,Raça/Cor,Indica a raça - cor da pessoa,"0 - Nulo ou não informado 
+1 - Branca
+2 - Preta
+3 - Amarela
+4 - Parda
+5 - Indígena
+99 - Inconsistências",Byte,Todos os anos,Baseline,1,Pessoa,NA,Sociodemográfica
+cod_sabe_ler_escrever_memb_eq,Sabe Ler e Escrever,Pessoa sabe ler e escrever,"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistências",Byte,Todos os anos,Baseline,1,NA,NA,Sociodemográfica
+cod_sexo_pessoa_eq,Sexo,Indica o sexo da pessoa,"0 - Nulo
+1 - Masculino
+2 - Feminino
+99 - Inconsistência",NA,Todos os anos,Baseline,0,Pessoa,NA,Sociodemográfica
+cod_tempo_cidade_memb,Tempo de Moradia no Município,Há quanto tempo mora na cidade,"0 - Nulo
+1 - Até seis meses
+2 - Entre seis meses e um ano 
+3 - Entre um e dois anos
+4 - Entre dois e cinco anos 
+5 - Entre cinco e dez anos 
+6 - Mais de dez anos
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+cod_tempo_rua_memb,Tempo de Moradia na Rua,Há quanto tempo mora na rua,"0 - Nulo
+1 - Até seis meses
+2 - Entre seis meses e um ano 
+3 - Entre um e dois anos
+4 - Entre dois e cinco anos 
+5 - Entre cinco e dez anos 
+6 - Mais de dez anos
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+cod_trabalho_12_meses_memb,Local de Nascimento,Local de nascimento,"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+cod_trabalhou_memb,Trabalhou na Semana Passada,Pessoa trabalhou na semana passada,"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+cod_unidade_territorial_fam,Código da Unidade Territorial Local,Código da Unidade Territorial Local,campo númérico formato NNN,Long,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+cod_vive_fam_rua_memb,Família em Situação de Rua,Família mora em rua,"0 - Nulo
+1 - Opção não marcada 
+2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+codanomal_sinasc,Código da Anomalia,Código da anomalia (CID 10),NA,Integer,2001-2015,SINASC,1,NA,NA,Nascimento
+codmunnatu_sim,Município de Naturalidade,Código do município de naturalidade do falecido,NA,Integer,NA,SIM,0,NA,NA,Óbito
+consprenat_sinasc,Consultas Pré-Natais,Número de consultas de acompanhamento pré-natal,NA,Integer,2011-2015,SINASC,1,NA,NA,Nascimento
+consultas_sinasc,Consultas Pré-Natais (Categorizada),Número de consultas de acompanhamento pré-natal,"0 - Nulo
+1 - Nenhuma
+2 - de 1 a 3
+3 - de 4 a 6
+4 - 7 e mais
+88 - Ignorado
+99 - Inconsistência",Byte,2001-2015,SINASC,0,NA,NA,Nascimento
+dt_admissao_empresa,Data de Admissão na Empresa,Data de admissão na empresa,NA,Date,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+dt_emissao_doc_certidao,Data de Emissão da Certidão Civil,Data de emissão da certidão civil.,NA,Integer,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+dt_entrada_coorte,Data de Entrada na Coorte,Data de entrada na coorte,NA,NA,Todos os anos,criada,0,NA,NA,Criada
+dt_fim_recebimento_bf,Final de Recebimento (BF),Data final de recebimento do BF,NA,Date,2004-2015,BF,0,NA,NA,Bolsa Família
+dt_inclusao_agente_jovem,Data de Inclusão no Agente Jovem,Data que a pessoa foi incluída no programa agente jovem,NA,Date,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+dt_inclusao_peti,Data de Inclusão no PETI,Data que a pessoa foi incluída no programa PETI,NA,Date,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+dt_inclusao_proger,Data de Inclusão no PROGER,Data que a pessoa foi incluída no programa PROGER,NA,Date,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+dt_inicio_recebimento_bf,Início de Recebimento (BF),Data de início de recebimento do BF,NA,Date,2004-2015,BF,0,NA,NA,Bolsa Família
+dt_nasc_pessoa_eq,Data de Nascimento,Data de nascimento da pessoa.,NA,Date,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+dta_cadastramento_memb,Data de Cadastramento no CadÚnico,Data de cadastramento da Pessoa no CadÚnico,"Data de cadastramento da
+Pessoa no CadÚnico: Formato DDMMAAAA",Date,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+dtobito_sim,Data do Óbito,Data do óbito,NA,Date,Todos os anos,SIM,0,NA,NA,Óbito
+dtultmenst_sinasc,Última Menstruação,Data da última menstruação (DUM),dd mm aaaa,date,2011-2015,SINASC,1,NA,NA,Nascimento
+emprego_cut_val,Remuneração do Emprego,Valor da remuneração do emprego (categorizada),"0 - Sem renda
+1 - Menos que 1/4 salário mínimo
+2- 1/4 a 1/2 salário mínimo
+3 - 1/2 a 1 salário mínimo
+4 - 1 a 2 salários mínimos
+5 - 2 a 3 salários mínimos
+6 - Mais que 3 salários mínimos
+99 - Inconsistência",Integer,Todos os anos,Baseline,1,Pessoa,SIM. Categoria,Sociodemográfica
+esc_sim,Escolaridade SIM,Escolaridade em anos (categorizada por tempo de escola),"1 – Nenhuma 
+2 – de 1 a 3 anos 
+3 – de 4 a 7 anos 
+4 – de 8 a 11 anos 
+5 – 12 anos ou mais 
+99 – Inválido ou nulo",Byte,Todos os anos,SIM,1,NA,NA,Óbito
+esc2010_sim,Escolaridade SIM (2010),Escolaridade por nível de formação em 2010,"
+1 – Sem escolaridade
+2 – Fundamental I (1ª a 4ª serie)
+3 – Fundamental II (5ª a 8ª serie)
+4 – Medio (antigo 2º grau)
+5 – Superior incompleto
+6 – Superior Completo
+99 – Inválido ou nulo",Byte,a partir de 2012,SIM,1,NA,NA,Óbito
+escfalagr1_sim,Escolaridade agregada SIM,Escolaridade agregada por nível de formação,"1 – Sem escolaridade
+2 – Fundamental I Completo e Incompleto
+3 – Fundamental II Completo e Incompleto
+4 – Ensino Medio Completo e Incompleto
+5 – Superior Completo e Incompleto
+99 – Inválido, nulo ou inespecífico",Byte,a partir de 2013,SIM,1,NA,NA,Óbito
+escmae_sim,Escolaridade da Mãe,Escolaridade da mãe em anos. Variável referente a óbito fetal ou menor que 1 ano.,"0 - Nulo
+1 - Nenhuma
+2 - de 1 a 3 anos
+3 - de 4 a 7 anos
+4 - de 8 a 11 anos
+5 - 12 anos ou mais
+9 - Ignorado
+99 - Inconsistência",NA,Todos os anos,SIM,0,NA,NA,Óbito
+escmae_sinasc,Escolaridade da mãe SINASC,Escolaridade da mãe em anos de estudo concluídos,"1 – Nenhuma 
+2 – de 1 a 3 anos 
+3 – de 4 a 7 anos 
+4 – de 8 a 11 anos 
+5 – 12 anos ou mais 
+99 – Inválido ou nulo",Byte,2001-2015,SINASC,1,NA,NA,Nascimento
+escmae2010_sinasc,Escolaridade da mãe (2010) SINASC,Escolaridade por nível de formação,"1 – Sem escolaridade
+2 – Fundamental I (1ª a 4ª série)
+3 – Fundamental II (5ª a 8ª série)
+4 – Médio (antigo 2º Grau)
+5 – Superior completo e incompleto
+99 – Inválido ou nulo",Byte,2011-2015,SINASC,1,NA,NA,Nascimento
+escmaeagr1_sim,Escolaridade da mãe (2010) agregada SIM,Escolaridade agregada por nível de formação,"1 – Sem escolaridade
+2 – Fundamental I Completo e Incompleto
+3 – Fundamental II Completo e Incompleto
+4 – Ensino Medio Completo e Incompleto
+5 – Superior Completo e Incompleto
+99 – Inválido, nulo ou inespecífico",Byte,a partir de 2013,SIM,1,NA,NA,Óbito
+escmaeagr1_sinasc,Escolaridade da mãe (2010) agregada SINASC,Escolaridade agregada por nível de formação,"1 – Sem escolaridade
+2 – Fundamental I Completo e Incompleto
+3 – Fundamental II Completo e Incompleto
+4 – Ensino Medio Completo e Incompleto
+5 – Superior Completo e Incompleto
+99 – Inválido, nulo ou inespecífico",Byte,2011-2015,SINASC,1,NA,NA,Nascimento
+escmaeagr2_sinasc,,,,,,SINASC,0,NA,NA,Nascimento
+escolaridade_eq,Escolaridade,Escolaridade da pessoa,"0 - Nulo
+1 - Pré-escola
+2 - Alfabetização
+3 - Ensino Fundamental primeiro segmento 
+4 - Ensino Fundamental segundo segmento
+5 - Ensino Médio 
+6 - Superior
+77 - Nunca frequentou 
+99 - Inconsistência",Byte,Todos os anos,Baseline,1,Pessoa,NA,Sociodemográfica
+estciv_sim,Situação conjugal,Categorias agregadas,"1 - Com companheiro
+2 - Sem companheiro
+99 - Inválido ou nulos",Byte,Todos os anos,SIM,1,NA,NA,Óbito
+estcivmae_sinasc,Situação Conjugal da Mãe,Situação conjugal da mãe,"0 - Nulo
+1 - Solteira
+2 - Casada
+3 - Viúva
+4 - Separada judicialmente/divorciada 5 - União estável
+88 - Ignorada
+99 - Inconsistência",Byte,2001-2015,SINASC,1,NA,NA,Nascimento
+estcivmae_sinasc,Situação conjugal da mãe,Categorias agregadas,"1 - Com companheiro
+2 - Sem companheiro
+99 - Inválido ou nulos",Byte,2001-2015,SINASC,1,NA,NA,Nascimento
+flag_fam_alterada_Baseline,NA,NA,"Marcação do tipo de alteração dos dados da família:
+0 - Nulo
+1 - Família não atualizada na Baseline 2 - Família atualizada na Baseline
+3 - Família oriunda da Baseline 99 - Inconsistência",Byte,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+fonte_sim,Fonte de Informação do Óbito,Indica a fonte de informação/estabelecimento em que a DO foi preenchida,"0 - Nulo 
+1 - Boletim de ocorrência 
+2 - Hospital 
+3 - Família 
+4 - Outra 
+88 - Ignorada 
+99 - Inconsistência",Byte,A partir de 2013,SIM,0,Causa Externa,NA,Óbito
+gest_month_precare,Mês de Gestação do Início do Pré-Natal,Mês de gestação em que iniciou o pré-natal (agregada),"0 - Nulo
+1 - Primeiro
+2 - Segundo
+3 - Terceiro
+4 - Quarto
+5 - Quinto
+6 - Sexto
+7 - Sétimo
+8 - Oitavo
+9 - Nono
+99 - Inconsistência",NA,2011-2015,SINASC,1,Gestação e Parto,SIM. Categoria,Nascimento
+gestacao_sim,Semanas de Gestação do Feto,Indica as semanas de gestação do feto. Variável referente a óbito fetal ou menor que 1 ano.,"0 - Nulo
+1 - Menos de 22 semanas
+2 - 22 a 27 semanas
+3 - 28 a 31 semanas
+4 - 32 a 36 semanas
+5 - 37 a 41 semanas
+6 - 42 semanas e mais
+88 - Ignorado
+99 - Inconsistência",Byte,2001-2015,SIM,0,Óbito Fetal,NA,Óbito
+gestacao_sinasc,Semanas de Gestação,Semanas de gestação,"0 - Nulo
+1 - Menos de 22 semanas
+2 - 22 a 27 semanas
+3 - 28 a 31 semanas
+4 - 32 a 36 semanas
+5 - 37 a 41 semanas
+6 - 42 semanas e mais
+88 - Ignorado
+99 - Inconsistência",Byte,2001-2015,SINASC,1,Gestação e Parto,NA,Nascimento
+gravidez_sim,Tipo de Gravidez,Informar o tipo de gravidez. Variável referente a óbito fetal ou menor que 1 ano.,"0 - Nulo
+1  Única
+2  Dupla
+3  Tripla e mais
+9  Ignorada
+99  Inconsistência",Byte,Todos os anos,SIM,1,NA,NA,Óbito
+gravidez_sinasc,Tipo de Gravidez,Tipo de gravidez,"0 - Nulo
+1 - Única
+2 - Dupla
+3 - Tripla ou mais 
+88 - Ignorado
+99 - Inconsistência",Byte,2001-2015,SINASC,1,Gestação e Parto,NA,Nascimento
+horanasc_sinasc,Hora do Nascimento,hora do nascimento,NA,string,2011-2015,SINASC,0,NA,NA,Nascimento
+horaobito_sim,Horário do Óbito,Horário do óbito,NA,String,Todos os anos,SIM,0,NA,NA,Óbito
+id_cidacs_pop100_v2,NA,NA,NA,NA,Todos os anos,criada,0,NA,NA,Criada
+id_cidacs_sinasc,Identificador Único do Indivíduo,Identificador único por indivíduo,NA,NA,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+idade_entrada_coorte_anos,Idade na Entrada da Coorte (anos),Idade (em anos) na entrada da coorte,NA,Integer,Todos os anos,criada,0,NA,NA,Criada
+idade_entrada_coorte_dias,Idade na Entrada da Coorte (dias),Idade (em dias) na entrada da coorte,NA,Integer,Todos os anos,criada,0,NA,NA,Criada
+idade_entrada_cut,Idade na Entrada da Coorte,Idade (em anos) na entrada da coorte (categorizada),"1 - 0 a 1 ano
+2 - 2 a 6 anos
+3 - 7 a 9 anos
+4 - 10 a 14 anos
+5 - 15 a 19 anos
+6 - 20 a 49 anos
+7 - 50 a 64 anos
+8 - 65 anos ou mais",NA,Todos os anos,Baseline,0,Pessoa,SIM. Categoria,Sociodemográfica
+idade_mae_cat,Idade da mãe,Idade agregada,"1 - menor de 14 anos
+2 - 14 a 19 anos
+3 - 20 a 24 anos
+4 - 25 a 29 anos
+5 - 30 a 34 anos
+6 - 35 a 39 anos
+7 - 40 a 44 anos
+8 - maior de 44 anos
+99 - Inválido ou nulo",Byte,2001-2015,SINASC,1,NA,NA,Nascimento
+idade_morte_cut,Idade na Data da Morte,Idade na data da morte (categorizada),"1 - 0 a 1 ano
+2 - 2 a 6 anos
+3 - 7 a 9 anos
+4 - 10 a 14 anos
+5 - 15 a 19 anos
+6 - 20 a 49 anos
+7 - 50 a 64 anos
+8 - 65 anos ou mais
+99 - Inconsistência",Integer,Todos os anos,SIM,0,Identificação,SIM. Categoria,Óbito
+idade_sim,Idade no Óbito,Idade na data do óbito,"01 a 59 - para unidade 0 
+01 a 23 - para unidade 1 
+01 a 29 - para unidade 2 
+01 a 11 - para unidade 3 
+01 a 99 - para unidade 4 
+00 a 99 - para unidade 5",Byte,Todos os anos,SIM,0,NA,NA,Óbito
+idademae_sim,Idade da Mãe,Idade da mãe. Variável referente a óbito fetal ou menor que 1 ano.,NA,Integer,Todos os anos,SIM,0,NA,NA,Óbito
+idademae_sinasc,Idade da mãe,Idade agregada,,Integer,Todos os anos,SINASC,0,NA,NA,Nascimento
+idanomal_sinasc,Anomalia,Anomalia identificada,"0 - Nulo
+1 - Sim
+2 - Não
+88 - Ignorado
+99 - Inconsistência",Byte,2011-2015,SINASC,1,NA,NA,Nascimento
+in_amamentando,Lactante,"Indica se uma pessoa do sexo feminino, com idade entre 10 e 60 anos, está em amamentação","0 - Nulo e Vazio
+1 - Sim
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+in_beneficiario_bal,Beneficiário do Bolsa Família,Indica beneficiário Bolsa Alimentação,"0 - Nulo e Vazio
+1 - Sim
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+in_beneficiario_bes,Beneficiário do Bolsa Escola,Indica beneficiário Bolsa Escola,"0 - Nulo e Vazio
+1 - Sim
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+in_complementado_bes,Complementação do Bolsa Escola,Indica complementação do Bolsa Escola,"0 - Nulo e Vazio
+1 - Sim
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,CONFERIR,Sociodemográfica
+in_complementado_bes_fam,Complementação do Bolsa Escola,Indica complementação do Bolsa Escola,"Vazio - sem informação, ou não é
+o caso S - Sim",Byte,2011-2015,Baseline,0,NA,CONFERIR,Sociodemográfica
+in_deficiencia_mudez,Mudez,Indica pessoa cuja deficiência seja 'mudez',"0 - Nulo e Vazio 1 - Sim
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+in_liberto_trab_escravo,Libertação de Trabalho Escravo,Indica se a pessoa foi libertada de trabalho escravo,"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+in_nenhum_programa,Não Participação em Programas Federais,Indica a não participação em qualquer programa do governo federal,"0 - Nulo e Vazio
+1 - Sim
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+in_ocupacao_peti,Ocupação PETI,Indica ocupação PETI,"0 - Nulo e Vazio
+1 - Sim
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+in_outra_deficiencia,Outras Deficiências,Indica pessoa cuja deficiência não esteja caracterizada dentre as anteriores,"0 - Nulo e Vazio
+1 - Sim. Apresenta outra deficiência distinta das anteriores 99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+in_outro_programa,Participação em Outros Programas,"Indica participação em outro programa
+distinto dos programas anteriormente relacionados","0 - Nulo e Vazio
+1 - Sim
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+in_participa_agente_jovem,Participação no Programa Agente Jovem,Indica participação no Programa Agente Jovem.,"Vazio - sem informação, ou não é
+o caso 0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+in_participa_bolsa_alimentacao,Participação no Programa Bolsa Alimentação,Indica participação no Programa Bolsa Alimentação,"0 - Nulo e Vazio
+1 - Sim
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+in_participa_bolsa_escola,Participação no Programa Bolsa Escola,Indica participação no Programa Bolsa Escola,"0 - Nulo e Vazio
+1 - Sim
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+in_participa_juv_cidada,Participação no Programa Juventude Cristã,Indica participação no Programa Juventude Cidadã,"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+in_participa_loas_bpc,Recebimento do BPC da LOAS,Indica recebimento do Benefício de Prestação Continuada (BPC) da LOAS (Lei Orgânica da Assistência Social),"0 - Nulo e Vazio 1 - Sim
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+in_participa_peti,Participação no PETI,Indica participação no PETI - Programa de Erradicação do Trabalho Infantil.,"0 - Nulo e Vazio 1 - Sim
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+in_participa_prev_rural,Participação na Previdência Rural,Indica participação na previdência rural,"""Vazio - sem informação, ou não é
+o caso S - Sim""""""",NA,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+in_participa_proger,Participação no PROGER,"Indica participação no Programa de Geração de Emprego, Trabalho e Renda - PROGER.","0 - Nulo e Vazio 1 - Sim
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+in_participa_pronaf,Participação no PRONAF,Indica participação no Programa Nacional de Fortalecimento da Agricultura Familiar (PRONAF),"0 - Nulo e Vazio
+1 - Sim
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+in_pessoa_duplicado,Pessoa Duplicada,Indica se a pessoa está duplicada:,"0 - Nulo e Vazio 1 - Sim
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_ajuda_especializado_memb,Recebe Ajuda de Terceiros  Especializada,Ajuda Terceiros Especializada,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_ajuda_familia_memb,Recebe Ajuda de Terceiros  Família,Ajuda Terceiros família,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_ajuda_instituicao_memb,Recebe Ajuda de Terceiros  Instituição,Ajuda Terceiros instituição,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_ajuda_nao_memb,Recebe Ajuda de Terceiros  Não Recebida,Ajuda Terceiros não recebida,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_ajuda_outra_memb,Recebe Ajuda de Terceiros  Outras Formas,Ajuda Terceiros outra forma,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_ajuda_vizinho_memb,Recebe Ajuda de Terceiros  Vizinhos,Ajuda Terceiros vizinhos,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_atend_centro_ref_rua_memb,Atendimento pelo Centro Pop nos Últimos 6 Meses,Foi atendido pelo Centro de referência para população em situação de rua nos últimos 6 meses,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_atend_cras_memb,Atendimento pelo CRAS nos Últimos 6 Meses,Foi atendido pelo CRAS - Centro de Referência da Assistência Social nos últimos 6 meses,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_atend_creas_memb,Atendimento pelo CREAS nos Últimos 6 Meses,Foi atendido pelo CREAS - Centro de Referência Especializada da Assistência Social nos últimos 6 meses,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_atend_hospital_geral_memb,Atendimento por Hospital/Clínica nos Últimos 6 Meses,Foi atendido por Hospital/Clínica Geral nos últimos 6 meses,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_atend_inst_gov_memb,Atendimento de Acolhimento nos Últimos 6 Meses,Foi atendido por Instituição de acolhimento governamental nos últimos 6 meses,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_atend_inst_nao_gov_memb,Atendimento de Acolhimento Não-Governamental nos Últimos 6 Meses,Foi atendido por Instituição de acolhimento não-governamental nos últimos 6 meses,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_atend_nenhum_memb,Sem Atendimento nos Últimos 6 Meses,Não foi atendido por nenhum local nos últimos 6 meses,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_ativ_com_coop_memb,Participação em Atividade Comunitária em Cooperativa,Indica participação em atividade comunitária em cooperativa,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_ativ_com_escola_memb,Participação em Atividade Comunitária em Escola,Indica participação em atividade comunitária em escola,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_ativ_com_mov_soc_memb,Participação em Atividade Comunitária em Movimento Social,Indica participação em atividade comunitária em movimento social,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_ativ_com_nao_resp_memb,Sem Resposta Sobre Participação em Atividade Comunitária,Não respondeu se participou de atividade comunitária,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_ativ_com_nao_sabe_memb,Não Sabe Se Participou de Atividade Comunitária,Não sabe se participou de atividade comunitária,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_cadastro_valido_fam,Cadastro Válido,Cadastro válido,"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_censo_inep_memb,Escola sem INEP,A escola não tem INEP,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_comunidade_quilombola_fam,NA,Não sabe (comunidade quilombola da família),"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,CONFERIR,Sociodemográfica
+ind_def_baixa_visao_memb,Deficiência Visual,Deficiência Visão,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_def_cegueira_memb_eq,Cegueira,Indica pessoa cuja deficiência seja cegueira,"0 - Nulo
+1 - Opção não marcada 
+2 - Opção marcada
+99 - Inconsistência",NA,Todos os anos,Baseline,1,Pessoa,NA,Sociodemográfica
+ind_def_fisica_memb_eq,Deficiência Física,Indica pessoa cuja deficiência seja deficiência física,"0 - Nulo
+1 - Opção não marcada 
+2 - Opção marcada
+99 - Inconsistência",Byte,Todos os anos,Baseline,1,Pessoa,NA,Sociodemográfica
+ind_def_mental_memb_eq,Deficiência Mental,Indica pessoa cuja deficiência seja deficiência mental,"0 - Nulo
+1 - Opção não marcada 
+2 - Opção marcada
+99 - Inconsistência",Byte,Todos os anos,Baseline,1,Pessoa,NA,Sociodemográfica
+ind_def_sindrome_down_memb,Síndrome de Down,Indica pessoa cuja deficiência seja 'Síndrome de Down',"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_def_surdez_memb_eq,Surdez,Indica pessoa cuja deficiência seja surdez,"0 - Nulo
+1 - Opção não marcada 
+2 - Opção marcada
+99 - Inconsistência",Byte,Todos os anos,Baseline,1,Pessoa,NA,Sociodemográfica
+ind_def_transtorno_mental_memb,Transtorno Mental,Deficiência Transtorno mental,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_desp_alimentacao_fam,Sem Despesa com Alimentação,Não tem despesa com alimentação,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_desp_aluguel_fam,Sem Despesa com Aluguel,Não tem despesa com aluguel,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_desp_energia_fam,Sem Despesa com Energia,Não tem despesa com energia,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_desp_gas_fam,Sem Despesa com Gás,Não tem despesa com gás,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_desp_medicamentos_fam,Sem Despesa com Medicamentos,Não tem despesa com medicamentos,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_desp_transpor_fam,Sem Despesa com Transporte,Não tem despesa com transporte,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_dinh_carregador_memb,Ganha Dinheiro como Carregador/Estivador,Ganha dinheiro como carregador/estivador,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_dinh_catador_memb,Ganha Dinheiro como Catador,Ganha dinheiro como catador de material reciclável,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_dinh_const_memb,Ganha Dinheiro em Construção Civil,Ganha dinheiro em construção civil,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_dinh_flanelhinha_memb,Ganha Dinheiro como Guardador/Flanelinha,Ganha dinheiro como guardador de carro/flanelinha,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_dinh_nao_resp_memb,Sem Resposta Sobre Como Ganha Dinheiro,Não respondeu como ganha dinheiro,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_dinh_outro_memb,Ganha Dinheiro por Outros Meios,Ganha dinheiro por outros meios,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_dinh_pede_memb,Ganha Dinheiro como Pedinte,Ganha dinheiro como pedinte,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_dinh_servs_gerais_memb,Ganha Dinheiro com Serviços Gerais/Limpeza,Ganha dinheiro com serviços gerais/limpeza/outro,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_dinh_vendas_memb,Ganha Dinheiro Com Vendas,Ganha dinheiro com vendas,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_dormir_albergue_memb,Dorme em Albergue,Indivíduo dorme em albergue,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_dormir_dom_part_memb,Dorme em Casa Privada,Indivíduo dorme em casa privada,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_dormir_rua_memb,Dorme na Rua,Indivíduo dorme na rua,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_familia_quilombola_fam,Família Quilombola,Família quilombola,"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_formulario_1_fam,NA,Formulário Avulso 1,"0 - Nulo
+1 - Não
+2 - Sim
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,CONFERIR,Sociodemográfica
+ind_formulario_2_fam,NA,Formulário Avulso 2,"0 - Nulo
+1 - Não
+2 - Sim
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,CONFERIR,Sociodemográfica
+ind_formulario_sup1_fam,NA,Formulário Suplementar 1,"Formulário Suplementar 1:
+0 - Nulo
+1 - Não
+2 - Sim
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,CONFERIR,Sociodemográfica
+ind_formulario_sup2_fam,NA,Formulário Suplementar 2,"0 - Nulo
+1 - Não
+2 - Sim
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,CONFERIR,Sociodemográfica
+ind_frequenta_escola_memb_eq,Frequenta Escola,Indica se a pessoa estava frequentando a escola no ano da informação,"0 - Nulo
+1 - Sim, rede pública
+2 - Sim, rede particular 
+3 - Não, já frequentou 
+4 - Nunca frequentou 
+5 - Outra
+99 - Inconsistência",Byte,Todos os anos,Baseline,1,Pessoa,NA,Sociodemográfica
+ind_min_energ_elet_doacao_fam,Recebeu Doações Para Reduzir o Consumo de Energia Elétrica,Recebeu de sua distribuidora de energia elétrica doação de lâmpadas ou outros equipamentos para reduzir o consumo de energia,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_min_energ_luz_fam,Não Pagou Pela Instalação de Energia,Não pagou pela instalação de energia na entrada de sua residência,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_min_energ_nenhum_fam,Não É Beneficiário de Programa do MME,Não é beneficiário de nenhum programa do Ministério de Minas e Energia,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_min_energ_tarifa_soc_fam,Recebe Conta de Energia Como Tarifa Social,Recebe sua conta de energia elétrica faturada como Tarifa Social,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_motivo_alcool_memb,Motivo da Situação de Rua  Alcoolismo,Vive na rua por motivo de alcoolismo,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_motivo_ameaca_memb,Motivo da Situação de Rua  Ameaça,Vive na rua por motivo de ameaça,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_motivo_desemprego_memb,Motivo da Situação de Rua  Desemprego,Vive na rua por motivo de desemprego,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_motivo_nao_resp_memb,Motivo da Situação de Rua  Não Respondeu,Não respondeu motivo por viver na rua,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_motivo_saude_memb,Motivo da Situação de Rua  Tratamento de Saúde,Vive na rua por motivo de tratamento de saúde,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_motivo_trabalho_memb,Motivo da Situação de Rua  Trabalho,Vive na rua por motivo de trabalho,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_otrn_outra_fam,Família Transferida Para Outra Família no Mesmo Município,Existência de Ocorrência Família transferida para outra família no mesmo município para a família,"0 - Nulo
+1 - Não Existe 2 - Existe
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_pais_origem_pessoa,País de Nascimento Desconhecido,País de nascimento da pessoa é desconhecido,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_pessoa_inter_0_17_anos_fam,Sem Pessoas Internadas entre 0 e 17 anos,Não tem pessoas internadas faixa 0- 17 anos,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_pessoa_inter_18_64_anos_fam,Sem Pessoas Internadas entre 18 e 64 anos,Não tem pessoas internadas faixa 18- 64 anos,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_pessoa_inter_65_anos_fam,Sem Pessoas Internadas com 65 anos ou mais,Não tem pessoas internadas faixa 65 anos ou mais,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_pmig_cpo_obr_prin_fam,Pendência em Campos Obrigatórios do Formulário Principal,Existência de pendência 'Campos Obrigatórios ou Obrigatórios Condicionados Não Preenchidos do formulário principal' para a família,"0 - Nulo
+1 - Não Existe 2 - Existe
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_pmig_cpo_obr_sup1_fam,Pendência em Campos Obrigatórios do Formulário Suplementar 1,Existência de pendência 'Campos Obrigatórios ou Obrigatórios Condicionados Não Preenchidos do formulário suplementar 1' para a família,"0 - Nulo
+1 - Não Existe 2 - Existe
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_prog_prohab_fam,Não É Beneficiário de Programa do Ministério das Cidades,Família não é beneficiária de qualquer programa do Ministério das Cidades,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_ptrn_sem_rf_fam,Família Sem Responsável Familiar Cadastrado,Existência de pendência 'Família sem Responsável Familiar Cadastrado' para a família,"0 - Nulo
+1 - Não Existe 2 - Existe
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_reserva_indigena_fam,NA,Não sabe(reserva indígena da família),"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,CONFERIR,Sociodemográfica
+ind_sesan_capit_agua_chuva_prod_alim_fam,Captação de Água da Chuva Para Produção de Alimentos,Recebeu infraestrutura de captação de água da chuva para produzir alimentos,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_sesan_cisterna_fam,Cisterna Recebida,Recebeu cisterna para armazenamento de água da chuva,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_sesan_feira_pop_mds_fam,Vende Alimentos em Feira Livre,Vende alimentos em feira livre popular financiada pelo MDS,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_sesan_horta_comum_fam,Participação em Projetos de Produção de Alimentos,"Participa de projetos de produção de alimentos (horta comunitária, criação de pequenos animais, viveiros e pomares)","0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_sesan_nenhum_fam,Família Não Beneficiária de Programa da Sesan,Família não é beneficiária de nenhum programa da Secretaria Nacional de Segurança Alimentar e Nutricional  SESAN,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_sesan_partic_alim_nutricao_fam,Participação em Curso de Alimentação e Nutrição,Participou de curso em alimentação e nutrição,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_sesan_proj_cart_indigena_fam,Participação em Projeto da Carteira Indígena,Participa de projeto da carteira indígena (Parceria MMA/MDS),"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_sesan_receb_alim_paa_fam,Recebe Alimentos do PAA,Recebe alimentos do PAA - Compra Direta,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_sesan_receb_cesta_basica_fam,Recebe Cesta de Alimentos,Recebe cesta de alimentos,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_sesan_receb_leite_fam,Recebe Leite,Recebe leite do programa do leite - Leite Fome Zero,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_sesan_refei_cozinha_comum_fam,Refeição em Cozinha Comunitária,Faz refeição em cozinha comunitária,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_sesan_refei_restau_popular_fam,Refeição em Restaurante Popular,Faz refeição em restaurante popular,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_sesan_vende_alim_paa_fam,Vende Alimentos para PAA,Vende alimentos para o PAA - Compra Direta,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_snas_abrigo_crianca_adoles_fam,Família Beneficiária de Abrigo Para Crianças e Adolescentes,Família beneficiária de abrigo para crianças e adolescentes,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_snas_abrigo_mulher_vitima_fam,Família Beneficiária de AbrigO Para Mulheres,Família beneficiária de abrigo para mulheres vítimas de violência,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_snas_bpc_deficiente_fam,Família Beneficiária do BPC  Deficiente,Família beneficiária do programa Benefício de Prestação Continuada - BPC deficiente,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_snas_bpc_idoso_fam,Família Beneficiária do BPC  Idoso,Família beneficiária do programa Benefício de Prestação Continuada - BPC idoso,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_snas_crianca_0_6_anos_fam,Crianças de 0 a 6 Anos em Ações Socioeducativas,Crianças de 0 a 6 anos em ações socioeducativas de apoio à família,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_snas_grupos_idosos_fam,Família Beneficiária de Centros e Grupos Para Idosos,Família beneficiária de Centros e Grupos de convivência para idosos,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_snas_nenhum_fam,Família Não Beneficiária de Programa da SNAS,Família não é beneficiária de nenhum programa da Secretaria Nacional de Assistência Social - SNAS,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_snas_paif_fam,Família Beneficiária Do Atenção Integral à Família,Família beneficiária do programa de Atenção Integral à Família - PAIF,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_snas_peti_fam,Família Beneficiária do PETI,Família beneficiária do programa de Erradicação do Trabalho Infantil - PETI,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_snas_projovem_adolescente_fam,Família Beneficiária do ProJovem Adolescente,Família beneficiária do programa ProJovem Adolescente,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_snas_projovem_campo_fam,Família Beneficiária do ProJovem Campo,Família beneficiária do programa ProJovem Campo,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_snas_projovem_trabalhador_fam,Família Beneficiária do ProJovem Trabalhador,Família beneficiária do programa ProJovem Trabalhador,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_snas_projovem_urbano_fam,Família Beneficiária do ProJovem Urbano,Família beneficiária do programa ProJovem Urbano,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_trabalho_infantil_fam,Trabalho Infantil na Família,Trabalho infantil na família,"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_trabalho_infantil_pessoa,NA,NA,"0 - Nulo
+1 - Opção não marcada no formulário
+2 - Opção marcada no formulário 99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+ind_val_remuner_emprego_memb,Sem Remuneração de Trabalho,Não recebeu remuneração de trabalho,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+ind_val_renda_doacao_memb,Não Recebe Doação,Não recebe doação,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+ind_val_renda_pensao_alimen_memb,Não Recebe Pensão Alimentícia,Não recebe pensão alimentícia,"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência",Byte,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+linhaa_o_sim,CIDs na Linha A,"CIDs informados, originalmente, na Linha A da DO.",NA,String,A partir de 2013,SIM,0,NA,NA,Óbito
+linhaa_sim,CIDs na Linha A (todos os anos),CIDs informados na linha A da DO,NA,String,Todos os anos,SIM,0,NA,NA,Óbito
+linhab_o_sim,CIDs na Linha B,"CIDs informados, originalmente, na Linha B da DO.",NA,String,A partir de 2013,SIM,0,NA,NA,Óbito
+linhab_sim,CIDs na Linha B (todos os anos),CIDs informados na linha B da DO,NA,String,Todos os anos,SIM,0,NA,NA,Óbito
+linhac_o_sim,CIDs na Linha C,"CIDs informados, originalmente, na Linha C da DO.",NA,String,A partir de 2013,SIM,0,NA,NA,Óbito
+linhac_sim,CIDs na Linha C (todos os anos),CIDs informados na linha C da DO,NA,String,Todos os anos,SIM,0,NA,NA,Óbito
+linhad_o_sim,CIDs na Linha D,"CIDs informados, originalmente, na Linha D da DO.",NA,String,A partir de 2013,SIM,0,NA,NA,Óbito
+linhad_sim,CIDs na Linha D (todos os anos),CIDs informados na linha D da DO,NA,String,Todos os anos,SIM,0,NA,NA,Óbito
+linhaii_o_sim,CIDs na Parte 2,"CIDs informados, originalmente, na Parte II da DO.",NA,String,A partir de 2013,SIM,0,NA,NA,Óbito
+linhaii_sim,CIDs na Parte 2 (todos os anos),CIDs informados na parte II da DO,NA,String,Todos os anos,SIM,0,NA,NA,Óbito
+locnasc_sinasc,Local de Nascimento,Local de nascimento,"0 - Nulo
+1 - Hospital
+2 - Outros estabelecimentos de saúde 
+3 - Domicílio
+4 - Outros
+99 - Inconsistência",Integer,2011-2015,SINASC,0,Identificação,NA,Nascimento
+lococor_sim,Local do Óbito,Local de ocorrência do óbito,"0 - Nulo 
+1 - Hospital 
+5 - Outros 
+88 - Ignorado 
+99 - Inconsistência",Byte,Todos os anos,SIM,1,Ocorrência,NA,Óbito
+m_age_yrs,Idade da Mãe,Idade da mãe (categorizada),"0 - Nulo
+1 - Entre 14 e 19 anos
+2 - Entre 20 e 24 anos
+3 - Entre 25 e 29 anos
+4 - Entre 30 e 34 anos
+5 - Entre 35 e 39 anos
+6 - Entre 40 e 44 anos
+7 - 45 anos ou mais
+99 - Inconsistência",NA,2001-2015,SINASC,1,Mãe e Pai,SIM. Categoria,Nascimento
+marital_status,Estado Civil,Estado civil (dicotômica),"0 - Nulo
+1 - Sem companheiro
+2 - Com companheiro
+99 - Inconsistência",NA,2001-2015,SINASC,1,Mãe e Pai,SIM. Categoria,Nascimento
+mes_prenatal,Mês prenatal agrupados acima de 10,Agregada para maior que 10,"Variável numérica.
+Se for maior que 10, transformar para 10.
+99 - Inválido ou nulo",Integer,2011-2015,SINASC,1,NA,NA,Nascimento
+mesprenat_sinasc,Mês do Início do Pré-Natal,Mês de gestação em que iniciou o acompanhamento pré-natal,NA,Integer,2011-2015,SINASC,0,NA,NA,Nascimento
+morteparto_sim,Momento do Óbito Materno,Momento do óbito materno em relação ao parto,"0 - Nulo 
+1 - Antes 
+2 - Durante 
+3 - Após 
+88 - Ignorado 
+99 - Inconsistência",NA,A partir de 2013,SIM,1,Condições e Causas,NA,Óbito
+n_ces_deliv,Número de Partos Cesáreos,Número de partos cesáreos (categorizada),"0 - Nenhuma
+1 - Uma
+2 - Duas
+3 - Três
+4 - Quatro
+5 - Cinco ou mais
+99 - Inconsistência",NA,2011-2015,SINASC,0,Gestação e Parto,SIM. Categoria,Nascimento
+n_dead_child,Número de Filhos Mortos,Número de filhos mortos (categorizada),"0 - Nenhum
+1 - Um
+2 - Dois
+3 - Três
+4 - Quatro
+5 - Cinco ou mais
+99 - Inconsistência",NA,2001-2015,SINASC,1,Gestação e Parto,SIM. Categoria,Nascimento
+n_live_child,Número de Filhos Vivos,Número de filhos vivos (categorizada),"0 - Nenhum
+1 - Um
+2 - Dois
+3 - Três
+4 - Quatro
+5 - Cinco ou mais
+99 - Inconsistência",NA,2001-2015,SINASC,1,Gestação e Parto,SIM. Categoria,Nascimento
+n_prenat_visit,Número de Visitas Pré-Natais,Número de visitas pré-natais (categorizada),"0 - Nenhuma
+1 - Uma
+2 - Duas
+3 - Três
+4 - Quatro
+5 - Cinco
+6 - Seis
+7 - Sete
+8 - Oito
+9 - Nove
+10 - Dez
+11 - Onze
+12 - Doze
+13 - Treze
+14 - Quatorze
+15 - Quinze ou mais
+99 - Inconsistência",NA,2001-2015,SINASC,1,Gestação e Parto,SIM. Categoria,Nascimento
+n_vag_deliv,Número de Partos Normais,Número de partos normais (categorizada),"0 - Nenhuma
+1 - Uma
+2 - Duas
+3 - Três
+4 - Quatro
+5 - Cinco ou mais
+99 - Inconsistência",NA,2011-2015,SINASC,1,Gestação e Parto,SIM. Categoria,Nascimento
+natural_sim,Naturalidade,Naturalidade,NA,Integer,A partir de 2013,SIM,0,NA,NA,Óbito
+necropsia_sim,Necropsia,Confirmação do diagnóstico por necropsia,"0 - Nulo 
+1 - Sim 
+2 - Não 
+88 - Ignorado 
+99 - Inconsistência",Byte,A partir de 2013,SIM,0,Condições e Causas,NA,Óbito
+nis_atual_elos,NIS,NIS atual da pessoa,NA,NA,Todos os anos,criada,0,NA,NA,Criada
+nm_outro_benef_pessoa,Outro Benefício da Pessoa (Nome),Nome de outro benefício da pessoa,NA,String,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+nom_escola_memb_eq,Nome da Escola,Nome da Escola,NA,String,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+nom_estab_assist_saude_fam_eq,Nome do Estabelecimento EAS/MS,Nome do estabelecimento EAS/MS,NA,String,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+nom_munic_escola_memb,Município da Escola,Nome do Município da Escola da pessoa,NA,String,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+nom_origem_alteracao_pessoa,Origem da Alteração,Descreve a origem da alteração,"Descreve a Origem da ALTERACAO
+(CADÚNICO DATASUS PIS ONLINE...) *
+(somente para a base MDS diária)",String,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+nom_pais_origem_pessoa,País de Nascimento,Nome do país de nascimento da Pessoa,Nome do país de nascimento da P,String,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+nu_estbo_saude,Código do Estabelecimento EAS/MS,Código do estabelecimento EAS/MS,NA,Integer,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+nu_natural_pessoa,NA,NA,NA,String,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+nu_pessoa_vivem_renda,Tipo de Renda,"Número de pessoas que vivem das rendas: emprego, aposentadoria, seguro desemprego, pensão ou outras rendas.",NA,Integer,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+NUMCAP,Capítulo CID10,Capítulo do CID10,NA,NA,Todos os anos,SIM,0,NA,NA,Óbito
+obitograv_sim,Óbito Fetal na Gravidez,Óbito fetal na gravidez. Variável referente a óbito fetal ou menor que 1 ano.,"0 - Nulo 
+1 - Sim 
+2 - Não 
+88 - Ignorado 
+99 - Inconsistência",Byte,NA,SIM,1,Óbito Fetal,NA,Óbito
+obitoparto_sim,Óbito Fetal no Parto,Informa como foi a morte fetal em relação ao parto. Variável referente a óbito fetal ou menor que 1 ano.,"0 - Nulo 
+1 - Antes 
+2 - Durante 
+3 - Depois 
+88 - Ignorado 
+99 - Inconsistência",Byte,Todos os anos,SIM,1,Óbito Fetal,NA,Óbito
+obitopuerp_sim,Óbito Fetal no Puerpério,Óbito etal no puerpério. Variável referente a óbito fetal ou menor que 1 ano.,"0 - Nulo 
+1 - Sim, até 42 dias após o parto 
+2 - Sim, de 43 dias a 1 ano 
+3 - Não 
+88 - Ignorado 
+99 - Inconsistência",Byte,NA,SIM,1,Óbito Fetal,NA,Óbito
+ocupmae_sim,Ocupação da Mãe,Ocupação da mãe. Variável referente a óbito fetal ou menor que 1 ano.,NA,Integer,Todos os anos,SIM,0,NA,NA,Óbito
+outras_rendas_cut_val,Outras Rendas,Valor das rendas não incluídas (categorizada),"0 - Sem renda
+1 - Menos que 1/4 salário mínimo
+2- 1/4 a 1/2 salário mínimo
+3 - 1/2 a 1 salário mínimo
+4 - 1 a 2 salários mínimos
+5 - 2 a 3 salários mínimos
+6 - Mais que 3 salários mínimos
+99 - Inconsistência",Integer,NA,Baseline,1,Pessoa,SIM. Categoria e presença,Sociodemográfica
+parto_sim,Tipo de Parto,Informa o tipo de parto. Variável referente a óbito fetal ou menor que 1 ano.,"0 - Nulo 
+1 - Vaginal 
+2 - Cesáreo 
+88 - Ignorado 
+99 - Inconsistência",Byte,Todos os anos,SIM,0,Óbito Fetal,NA,Óbito
+parto_sinasc,Tipo de Parto,Tipo de parto,"0 - Nulo
+1 - Vaginal
+2 - Cesário
+88  Ignorado
+99 - Inconsistência",Byte,2001-2015,SINASC,1,Gestação e Parto,NA,Nascimento
+partos_cesareos_cat,Número de partos cesáreos,Agregada para maior que 5,"Variável numérica.
+Se for maior que 5, transformar para 5.
+99 - Inválido ou nulo",Integer,2011-2015,SINASC,1,Gestação e Parto,SIM. Categoria,Nascimento
+partos_normais_cat,Partos vaginais,Número de partos,"Variável numérica.
+Se for maior que 10, transformar para 10.
+99 - Inválido ou nulo",Integer,2011-2015,SINASC,1,NA,NA,Nascimento
+pensao_cut_val,Renda de Pensão Alimentícia,Valor da renda da pensão alimentícia (categorizada),"0 - Sem renda
+1 - Menos que 1/4 salário mínimo
+2- 1/4 a 1/2 salário mínimo
+3 - 1/2 a 1 salário mínimo
+4 - 1 a 2 salários mínimos
+5 - 2 a 3 salários mínimos
+6 - Mais que 3 salários mínimos
+99 - Inconsistência",Integer,NA,Baseline,0,Pessoa,SIM. Categoria e presença,Sociodemográfica
+peso_nasc_dic,Peso ao Nascer,Peso agregado,"1 - Menos que 2500g
+2 - 2500g ou mais
+99 - Inválido ou nulo",Byte,2001-2015,SINASC,1,Identificação,SIM. Categoria,Nascimento
+peso_nasc_oms,Peso ao Nascer (OMS),"Peso categorizado pela OMS, dicotômica","1 - Menos que 1000g
+2 - Entre 1000g e 1499g
+3 - Entre 1500g e 2499g
+4 - Entre 2500g e 2999g
+5 - Entre 3000g e 3999g 
+6 - 4000g ou mais
+99 - Inválido ou nulo",Byte,2001-2015,SINASC,1,Identificação,SIM. Categoria,Nascimento
+peso_sim,Peso do Nascer,Peso ao nascer em gramas. Variável referente a óbito fetal ou menor que 1 ano.,NA,Integer,Todos os anos,SIM,0,NA,NA,Óbito
+peso_sinasc,Peso ao Nascer,Peso ao nascer em gramas.,NA,Integer,2001-2015,SINASC,0,NA,NA,Nascimento
+prematuridade,Prematuridade,Prematuridade categorizada,"1 - Menos de 28 semanas
+2 - Entre 28 e 32 semanas
+3 - Entre 32 e 34 semanas
+4 - Entre 34 e 37 semanas
+5 - 37 ou 38 semanas
+6 - 39 ou 40 semanas
+7 - 41 semanas
+8 - 42 semanas 
+9 - 43 ou 44 semanas
+99 - Inválido ou nulo",Byte,2011-2015,SINASC,1,Gestação e Parto,SIM. Categoria,Nascimento
+prematuridade_oms,Prematuridade OMS,Prematuridade categorizada OMS,"1 - Menos de 28 semanas
+2 - Entre 28 e 32 semanas
+3 - Entre 32 e 37 semanas
+4 - 37 semanas ou mais
+99 - Inválido ou nulo",Byte,2011-2015,SINASC,1,Gestação e Parto,SIM. Categoria,Nascimento
+preterm,Prematuridade,Prematuridade,"0 - Nulo
+1 - Menos de 28 semanas
+2 - Entre 28 e 32 semanas
+3 - Entre 32 e 34 semanas
+4 - Entre 34 e 37 semanas
+5 - 37 ou 38 semanas
+6 - 39 ou 40 semanas
+7 - 41 semanas
+8 - 42 semanas 
+9 - 43 ou 44 semanas
+99 - Inconsistência",NA,2011-2015,SINASC,0,Gestação e Parto,SIM. Categoria,Nascimento
+preterm_who,prematuridade (OMS),Prematuridade (OMS),"0 - Nulo
+1 - Menos de 28 semanas
+2 - Entre 28 e 32 semanas
+3 - Entre 32 e 37 semanas
+4 - 37 semanas ou mais
+99 - Inconsistência",NA,2011-2015,SINASC,0,Gestação e Parto,SIM. Categoria,Nascimento
+qt_deficientes,Deficientes,Quantidade de deficientes calculada na tabela de pessoas,NA,Integer,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+qt_maes_amamentando,Mães Amamentando,Quantidade de mães amamentando calculada na tabela de pessoas,NA,Integer,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+qt_mulheres_gravidas,Mulheres Grávidas,Quantidade de mulheres grávidas calculada na tabela de pessoas,NA,Integer,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+qtd_comodos_domic_fam_eq,Cômodos do Domicílio,"Número de cômodos do domicílio (inclusive banheiro, sala e cozinha, desde que separados por paredes)",NA,Integer,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+qtd_comodos_dormitorio_fam,Dormitórios do Domicílio,Quantidade de comodo servindo como dormitório do domicilio,NA,Integer,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+qtd_dias_receb_fam,Recebimento do Bolsa Família,Quantidade de anos de recebimento do bolsa família,"1 - 1 a 2 anos
+2 - 3 a 4 anos
+3 - 4 a 5 anos
+4 - 6 a 7 anos
+5 - Mais que 8 anos
+99 - Inválido ou nulo",,2004-2015,Bolsa Família,1,NA,NA,Bolsa Família
+qtd_dormir_freq_albergue_memb,Vezes por Semana Dormindo em Albergue,Quantidade de vezes por semana que dorme em albergue,"0 - Nulo
+1 - 1 vez
+2 - 2 vezes
+3 - 3 vezes
+4 - 4 vezes
+5 - 5 vezes
+6 - 6 vezes
+7 - 7 vezes
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+qtd_dormir_freq_dom_part_memb,Vezes por Semana Dormindo em Dormitório Particular,Quantidade de vezes por semana que dorme em dormitório particular,"0 - Nulo
+1 - 1 vez
+2 - 2 vezes
+3 - 3 vezes
+4 - 4 vezes
+5 - 5 vezes
+6 - 6 vezes
+7 - 7 vezes
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+qtd_dormir_freq_rua_memb,Vezes por Semana Dormindo na Rua,Quantidade de vezes por semana que dorme na rua,"0 - Nulo
+1 - 1 vez
+2 - 2 vezes
+3 - 3 vezes
+4 - 4 vezes
+5 - 5 vezes
+6 - 6 vezes
+7 - 7 vezes
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+qtd_familias_domic_fam,Famílias no Domicílio,Quantidade de famílias no domicílio,NA,Integer,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+qtd_freq_outro_memb,NA,Quantidade de vezes por semana que,"0 - Nulo
+1 - 1 vez
+2 - 2 vezes
+3 - 3 vezes
+4 - 4 vezes
+5 - 5 vezes
+6 - 6 vezes
+7 - 7 vezes
+99 - Inconsistência",Byte,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+qtd_meses_12_meses_memb,Meses Trabalhando nos Últimos 12 Meses,Quantidade de meses trabalhados nos últimos 12 meses.,NA,Integer,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+qtd_pessoa_inter_0_17_anos_fam,Pessoas Internadas entre 0 e 17 anos,Quantidade de pessoas internadas faixa 0-17 anos,"Quantidade de pessoas
+internadas faixa 0-17 anos",Integer,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+qtd_pessoa_inter_18_64_anos_fam,Pessoas Internadas entre 18 e 64 anos,"Quantidade de pessoas internadas
+faixa 18-64 anos",NA,Integer,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+qtd_pessoa_inter_65_anos_fam,Pessoas Internadas com 65 anos ou mais,Quantidade de pessoas internadas. Faixa 65 anos ou mais,Quantidade de pessoas internadas faixa 65 anos ou mais,Integer,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+qtd_pessoas_domic_fam_eq,Pessoas Vivendo no Domicílio,Quantidade de pessoas que vivem no domicílio,NA,Integer,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+qtdfilmort_sim,Número de Filhos Mortos,Número de filhos mortos. Variável referente a óbito fetal ou menor que 1 ano.,NA,Byte,Todos os anos,SIM,1,Óbito Fetal,NA,Óbito
+qtdfilmort_sinasc,Perdas Fetais e Abortos,Número de perdas fetais e abortos,NA,Integer,2001-2015,SINASC,0,Gestação e Parto,SIM. Categoria,Nascimento
+qtdfilvivo_sim,Número de Filhos Vivos,Número de filhos vivos. Variável referente a óbito fetal ou menor que 1 ano.,NA,Byte,Todos os anos,SIM,1,Óbito Fetal,NA,Óbito
+qtdfilvivo_sinasc,Filhos Vivos,Número de filhos vivos,NA,Integer,2001-2015,SINASC,0,Gestação e Parto,SIM. Categoria,Nascimento
+qtdgestant_sinasc,Gestações Anteriores,Número de gestações anteriores,NA,Integer,2011-2015,SINASC,1,NA,NA,Nascimento
+qtdpartces_sinasc,Número de Partos Cesáreos,Número de partos cesáreos,NA,Integer,2011-2015,SINASC,0,NA,NA,Nascimento
+qtdpartnor_sinasc,Número de Partos Vaginais,Número de partos vaginais,NA,Integer,2011-2015,SINASC,0,NA,NA,Nascimento
+racacor_sim,Raça/cor,Raça/cor,"1 – Branca
+2 – Preta
+3 – Amarela
+4 – Parda
+5 – Indígena
+99 – Inválido ou nulo",Byte,Todos os anos,SIM,1,NA,NA,Óbito
+racacormae_sinasc,Raça/cor mãe,Raça/cor da mãe,"1 – Branca
+2 – Preta
+3 – Amarela
+4 – Parda
+5 – Indígena
+99 – Inválido ou nulo",Byte,2011-2015,SINASC,1,NA,NA,Nascimento
+rf_mes_gravidez,Mês de Gravidez,"Se grávida, mês de gravidez em que se encontra a gestante",NA,Integer,NA,Baseline,0,NA,NA,Sociodemográfica
+rf_mes_moradia,NA,Parte não inteira do tempo de moradia (em meses),NA,Integer,NA,Baseline,0,NA,NA,Sociodemográfica
+seguro_cut_val,Renda do Seguro Desemprego,Valor da renda do seguro desemprego (categorizada),"0 - Sem renda
+1 - Menos que 1/4 salário mínimo
+2- 1/4 a 1/2 salário mínimo
+3 - 1/2 a 1 salário mínimo
+4 - 1 a 2 salários mínimos
+5 - 2 a 3 salários mínimos
+6 - Mais que 3 salários mínimos
+99 - Inconsistência",Integer,Todos os anos,Baseline,1,Pessoa,SIM. Categoria,Sociodemográfica
+semagestac_sim,Semanas de Gestação,Número de semanas de gestação. Variável referente a óbito fetal ou menor que 1 ano.,"1 - Menos 22 semanas 
+2 - 22 a 27 semanas 
+3 - 28 a 31 semanas 
+4 - 32 a 36 semanas 
+5 - 37 a 41 semanas 
+6 - 42 e + semanas 
+88 - Ignorado 
+99 - Inconsistência",NA,Todos os anos,SIM,1,NA,NA,Óbito
+semagestac_sinasc,Semanas de Gestação,Número de semanas de gestação,NA,NA,2011-2015,SINASC,0,NA,NA,Nascimento
+sexo_sim,Sexo,Sexo,"
+0 – Nulo
+1 – Masculino
+2 – Feminino
+9 – Ignorado
+99 – Inválido ou nulo",Byte,Todos os anos,SIM,1,NA,NA,Óbito
+sexo_sinasc,Sexo,Sexo,"1 – Masculino
+2 – Feminino",Byte,2001-2015,SINASC,1,NA,NA,Nascimento
+sig_orgao_emissor_pessoa,Orgão Emissor da CI da Pessoa,Órgão Emissor da CI da Pessoa,Órgão Emissor da CI da Pessoa,String,NA,Baseline,0,NA,NA,Sociodemográfica
+situacao_cadastro,NA,NA,NA,NA,Todos os anos,criada,0,NA,NA,Criada
+stcesparto_sinasc,Cesárea Antes do Trabalho de Parto,Indica se a cesárea ocorreu antes do trabalho de parto iniciar,"0 - Nulo
+1 - Sim
+2 - Não
+3 - Não se aplica 
+88 - Ignorado
+99 - Inconsistência",Byte,2011-2015,SINASC,1,NA,NA,Nascimento
+sttrabpart_sinasc,Trabalho de Parto Induzido,Indica se o trabalho de parto foi induzido,"0 - Nulo
+1 - Sim
+2 - Não
+3 - Não se aplica 
+88 - Ignorado
+99 - Inconsistência",Byte,2011-2015,SINASC,1,NA,NA,Nascimento
+tempo_recebimento_dias_bf,Tempo de Recebimento (BF),Tempo de recebimento (em dias) do BF,NA,Integer,2004-2015,BF,0,NA,NA,Bolsa Família
+tpapresent_sinasc,Apresentação do RN,Tipo de apresentação do RN,"0 - Nulo
+1 - Cefálico
+2 -Pélvica ou podálica
+3 - Transversa
+88 - Ignorado
+99  Inconsistência",Byte,2011-2015,SINASC,1,NA,NA,Nascimento
+tpmetestim_sinasc,Método Utilizado,Método utilizado. Variável referente a gestação e parto,"0 - Nulo
+1 - Exame físico 
+2 - Outro método 
+88 - Ignorado
+99 - Inconsistência",Byte,2011-2015,SINASC,1,NA,NA,Nascimento
+tpmorteoco_sim,Ocorrência da Morte,Quando a morte ocorreu,"0 - Nulo 
+1 - Na gravidez 
+2 - No parto 
+3 - No aborto 
+4 - Até 42 dias após o parto 
+5 - De 45 dias a 1 ano 
+8 - Não ocorreu nesse período 
+88 - Ignorado 
+99 - Inconsistência",Byte,A partir de 2012,SIM,1,Condições e Causas,NA,Óbito
+tpnascassi_sinasc,Assistência no Nascimento,Profissional que assistiu o nascimento,"0 - Nulo
+1 - Médico
+2 - Enfermeira/obstetriz
+3 - Parteira
+4 - Outros
+88 - Ignorado
+99  Inconsistência",Byte,2011-2015,SINASC,1,NA,NA,Nascimento
+tpobitocor_sim,Momento do Óbito,Indica quando o óbito ocorreu,"0 - Nulo 
+1 - Durante a gestação 
+2 - Durante abortamento 
+3 - Após abortamento 
+4 - No parto ou até 1 hora após o parto 
+5 - No puerpério (até 42 dias do termino da gestação) 
+6 - Entre o 43º dia e até um ano após o término da gestação 
+7 - Investigação não identificou o momento do óbito 
+8 - Mais de 1 ano após o parto 
+9 - O óbito não ocorreu em nenhuma das circunstâncias acima mencionadas 
+99  Inconsistência",Byte,A partir de 2013,SIM,1,Condições e Causas,NA,Óbito
+tprobson_sinasc,Grupo de Robson,Código do grupo de Robson,"1 - Grupo 1
+2 - Grupo 2
+3 - Grupo 3
+4 - Grupo 4
+5 - Grupo 5
+6 - Grupo 6
+7 - Grupo 7
+8 - Grupo 8
+9 - Grupo 9
+10 - Grupo 10
+",,2013-2015,SINASC,1,NA,NA,Nascimento
+uni_dade_sim,Unidade da Idade,Unidade da idade,"0 - Idade menor de 1 hora 
+1 - Hora 
+2 - Dias 
+3 - Meses 
+4 - Anos 
+5 - Mais de 100 anos",Byte,Todos os anos,SIM,1,NA,NA,Óbito
+val_desp_agua_esgoto_fam_eq,Valor da Despesa com Água,Valor da despesa com água,NA,Integer,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+val_desp_alimentacao_fam_eq,Vlor da Despesa com Alimentação,Valor da despesa com alimentação,NA,Integer,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+val_desp_aluguel_fam_eq,Vlor da Despesa com Aluguel,Valor da despesa de aluguel,NA,Integer,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+val_desp_energia_fam_eq,Vlor da Despesa com Luz,Valor da despesa com luz,NA,Integer,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+val_desp_gas_fam_eq,Vlor da Despesa com Gás,Valor da despesa com gás,NA,Integer,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+val_desp_medicamentos_fam_eq,Vlor da Despesa com Medicamentos,Valor da despesa com medicamentos,NA,Integer,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+val_desp_transpor_fam_eq,Vlor da Despesa com Transporte,Valor da despesa com transporte,NA,Integer,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+val_outras_rendas_memb_eq,Outras Rendas Não Incluídas,"Valor das outras rendas não incluídas como: emprego, aposentadoria, seguro desemprego, pensão ou outras rendas.",NA,Integer,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+val_remuner_emprego_memb_eq,Renda da Remuneração do Emprego,Valor da remuneração do emprego,NA,Integer,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+val_renda_aposent_memb_eq,Renda de Aposentadoria,Valor da renda de aposentadoria.,NA,Integer,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+val_renda_bruta_12_meses_memb,Renda Bruta em Todas as Ocupações (últimos 12 meses),Valor da renda bruta em todas as ocupações nos últimos 12 meses,NA,Integer,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+val_renda_doacao_memb,Renda de Doação,Valor recebido de doação (sem casas decimais),NA,Integer,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+val_renda_pensao_alimen_memb_eq,Renda de Pensão Alimentícia,Valor da renda da pensão alimentícia.,NA,Integer,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+val_renda_seguro_desemp_memb_eq,Renda de Seguro Desemprego,Valor da renda do seguro desemprego.,NA,Integer,Todos os anos,Baseline,0,NA,NA,Sociodemográfica
+visitas_prenat,Consultas Pré-Natais categorizado,Quantidade de consultas prenatal realizadas categorizadas,"1 – Nenhuma
+2 – de 1 a 3
+3 – de 4 a 6
+4 – 7 e mais
+99 – Inválido ou nulo",Byte,2011-2015,SINASC,1,NA,NA,Nascimento
+vl_beneficio_peti,Renda do Benefício PETI,Valor do benefício PETI,NA,Integer,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+vl_despesa_prest_habitacional,Valor da Despesa com Prestação Habitacional,Valor da despesa com prestação habitacional,NA,Integer,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+vl_outras_despesas,Valor de Outras Despesas,Valor das outras despesas não incluídas.,NA,Integer,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+vlr_renda_media_fam,Renda Média Familiar,Valor médio de renda familiar (per capita),NA,Integer,2011-2015,Baseline,0,NA,NA,Sociodemográfica
+,,,,,,,82,,,
